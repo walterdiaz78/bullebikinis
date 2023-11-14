@@ -2,7 +2,10 @@
 
 Puede navegar la pagina en https://bullebikinis.netlify.app/
 
+Puede ver el codigo en rama master
+
 Se resuelve pendiente api rest con un formulario conectado a la API REST de Google Sheets yendo a la página 'mayorista' desde pagina contacto boton "Ingresa para compras mayoristas".
+
 
 Documentación Preliminar del Proyecto - Sitio Web Desarrollo de sitio web para la marca de bikinis Bulle.
 
