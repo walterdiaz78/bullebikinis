@@ -1,0 +1,375 @@
+/*
+.articulo{
+  position: absolute;
+  top: 20%;
+  font-size: 1vw;
+  padding: 20px;
+  margin: 30px;
+}  
+
+ LO DE ARRIBA  ESTABA DE ANTES*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
+  color: #efefef;
+  text-align: center;
+  background-image: url('../media/image/home.jpg');
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center 25%; /* Centra la imagen tanto horizontal como verticalmente */
+
+}
+
+body a, body a:visited {
+  color: #efefef;
+  text-decoration: none;
+}
+body a:hover {
+  color: #fff;
+}
+
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+  text-align: left;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-top: 2%;
+  margin-top: 3%;
+}
+
+header nav {
+  display: inline-block;
+  margin-top: 2%;
+}
+
+header nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+/* Media query para pantallas más pequeñas (como celulares) */
+
+@media (max-width: 767px) {
+  .articulo {
+      font-size: 3vw !important;
+      top: 30% !important; 
+      }
+  
+  }
+  body {
+    background-position:top;
+  }
+  
+
+  header  {
+    padding-top: 0%;
+  }
+
+  header h1{
+    font-size: 3vw;
+  }
+
+  
+
+  body.h3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+  }
+  
+  
+  
+  .container{
+   
+   top: 20vh;
+   }
+  
+  .container p {
+    font-size: 2vw; /* Tamaño de letra deseado, por ejemplo, 16px */
+    }
+  
+    .container-body{
+      flex-wrap: wrap;
+    }
+
+    
+
+
+
+
+
+
+
+header nav ul li a {
+  display: block;
+  padding: 24px 15px;
+}
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+
+h3 { position: relative
+  
+}
+
+
+.caption {
+  /* Estilos para el botón */
+  /* Ajusta el color de fondo, el color de texto, el padding, el tamaño de fuente, etc., según tus preferencias */
+  position: absolute;
+  top: 38%;
+  left: 5%;
+  text-align: center;
+  padding: 2% 1%;
+  border: 0.5vw solid;
+  color: #fff;
+  margin: 0;
+  font-size: 3vw; /* Ajusta el tamaño de fuente según tus preferencias */
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-decoration: none; /* Para quitar la subrayado de enlace */
+  border-radius: 5px; /* Añade esquinas redondeadas si deseas */
+}
+
+.container {
+  position:absolute;
+  top: 75%; 
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #444;
+  line-height: 1.6;
+  padding: 60px 0;
+  height: 30vh;
+}
+
+.container .content {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.container p {
+  margin-bottom: 40px;
+}
+
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:100px; /* 40px*/
+  right:40px; /* 40px*/
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+
+/*
+main{
+  height: 15%;
+  
+}*/
+
+.articulo {
+  position: absolute;
+  top: 30%; /* Mantiene la posición vertical en el centro */
+  left: 50%; /* Centra horizontalmente en relación con el viewport */
+  transform: translate(-50%, -50%); /* Corrige la posición para centrar */
+  width: 90%;
+  font-size: 1.1vw;
+  padding: 25px;
+  background-color: rgba(68, 68, 68, 0.5);
+  border-radius: 24px;
+  text-align: center; /* Centra el contenido horizontalmente */
+  /*margin-bottom: 40px;*/
+
+}
+
+
+@media (max-width: 768px) {
+.articulo{
+  position: absolute;
+  top: 18%; /* Mantiene la posición vertical en el centro */
+  padding: 15px;
+  font-size: 1.4vw;
+    }
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+.conteiner-mapa{
+/*
+    position: relative;
+    top: calc(60% + 100px); /* Ajusta la posición debajo del .articulo */
+     left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    background-color:  rgba(68, 68, 68, 0.5);
+    border-radius: 24px;
+  }
+   
+
+
+.glass-container {
+  position:absolute;
+  top:50%;
+  left: 50%; /* Centra horizontalmente en relación con el viewport */
+  transform: translate(-50%, 0%); /* Corrige la posición para centrar */
+  color:#E6E6E6;
+  background: rgba(68, 68, 68, 0.3); /* Fondo con opacidad */
+  padding: 20px; /* Añade un espacio alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados para el contenedor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.map-iframe {
+  width: 80%;
+  height: 90%; /* Ocupa el espacio completo del contenedor padre */
+}
+
+/* Añade un margen inferior para separar el mapa del footer */
+glass-container {
+  margin-bottom: 40px; /* Ajusta según tus preferencias */
+}
+
+
+
+
+
+.mapa {
+  margin-top: 25%;
+  margin-bottom: 100px ;
+ }
+
+
+.mapa h1{
+  justify-content: center;
+  font-size: 25px;
+  max-width: 450px;
+}
+
+.mapa p {
+  font-size: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+   
+  .glass-container {
+    position:absolute;
+    top:35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  position: fixed;
+  bottom:0%;
+  width: 100%;
+  background-color: #444;
+  color: #f2f2f2;
+  padding: 40px;
+  clear: both;
+}
+
+.caja-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+/* Media query para dispositivos con un ancho de pantalla de al menos 768px (computadoras) */
+@media (min-width: 768px) {
+    .icon-text {
+        display: inline; /* Muestra el texto junto a los íconos en computadoras */
+        margin-left: 10px; /* Espacio entre el ícono y el texto */
+    }
+
+    .caja-footer a {
+        font-size: 1.3vw; /* Aumenta el tamaño de los íconos en computadoras */
+    }
+}
+
+/* Media query para dispositivos con un ancho de pantalla de hasta 767px (tablets y celulares) */
+@media (max-width: 767px) {
+    .icon-text {
+        display: none; /* Oculta el texto junto a los íconos en dispositivos más pequeños */
+    }
+
+    .caja-footer a {
+        font-size: 24px; /* Mantiene el tamaño de los íconos en dispositivos más pequeños */
+    }
+
+    
+
+}
+@media (max-width: 767px) {
+  nav ul li a {
+    font-size: 14px; 
+  }
+}
+
+
+
+
+
+

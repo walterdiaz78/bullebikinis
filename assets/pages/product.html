@@ -1,0 +1,113 @@
+<!-- crear muchos archivos juntos touch pages/{productos,servicios,contacto}.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulle</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="icon" type="image/png" href="../media/image/favicom.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Agrega estos enlaces en la sección head de tu HTML para cargar Slick Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="/index.html">BULLÉ</a></h1>
+              <nav>
+                  <ul>
+                      <li><a href="/index.html">HOME</a></li>
+                      <li><a href="./about.html">+ INFO</a></li>
+                      <li><a href="./product.html">SHOP</a></li>
+                      <li><a href="./contact.html">CONTACTO</a></li>
+                  </ul>
+              </nav>
+        
+      </header>
+      <main>
+        <div class="bloc">
+            <div class="owl-carousel">
+                <div class="bloc_bis enterizas">
+                    <a href="https://bulle.mercadoshops.com.ar/enterizas" target="_blank"><img src="/assets/media/image/Polish_20221019_221519275.jpg" alt="">Enterizas</a>
+                </div>
+        
+                <div class="bloc_bis tops">
+                    <a href="https://bulle.mercadoshops.com.ar/tops" target="_blank"><img src="/assets/media/image/carreZoom6.jpg" alt="">Tops</a>
+                </div>
+        
+                <div class "bloc_bis bikini inferior">
+                    <a href="https://bulle.mercadoshops.com.ar/bottom" target="_blank"><img src="/assets/media/image/zooom.jpg" alt="">Bottom</a>
+                </div>
+        
+                <div class="bloc_bis entera">
+                    <a href="https://bulle.mercadoshops.com.ar/enterizas" target="_blank"><img src="/assets/media/image/Polish_20221019_221034993.jpg" alt="">Enterizas</a>
+                </div>
+        
+                <div class="bloc_bis unapieza">
+                    <a href="https://bulle.mercadoshops.com.ar/tops" target="_blank"><img src="/assets/media/image/SDFDDG.jpg" alt="">Tops</a>
+                </div>
+        
+                <div class="bloc_bis bikini dospiezas">
+                    <a href="https://bulle.mercadoshops.com.ar/bottom" target="_blank"><img src="/assets/media/image/botom2.jpg" alt="">Bottoms</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+          
+    </main>
+    
+    <footer class="footer">
+      <div class="caja-footer">
+          <a href="https://www.instagram.com/bulle.arg">
+              <i class="fa fa-instagram"></i> <span class="icon-text">Seguinos en Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/Bulle.arg">
+              <i class="fa fa-facebook"></i> <span class="icon-text">Seguinos en Facebook</span>
+          </a>
+          <a href="mailto:bulle.bikinis@gmail.com">
+              <i class="fa fa-envelope"></i> <span class="icon-text">Envianos un mail</span>
+          </a>
+          <a href="./assets/pages/product.html">
+              <i class="fa fa-map-marker"></i> <span class="icon-text">Belgrano CABA</span>
+          </a>
+      </div>
+  </footer>
+      
+</body>
+    
+<script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        items: 5, // Número de elementos a mostrar en el carrusel
+        loop: true, // Repetir el carrusel
+        autoplay: true, // Reproducción automática
+        autoplayTimeout: 3000, // Intervalo de tiempo de la reproducción automática en milisegundos
+        
+        margin: 10, // Espacio entre elementos
+        responsive:{
+          0:{
+            items: 1 // Número de elementos a mostrar en pantallas pequeñas
+          },
+          600:{
+            items: 2 // Número de elementos a mostrar en pantallas medianas
+          },
+          1000:{
+            items: 3 // Número de elementos a mostrar en pantallas grandes
+          }
+        }
+      });
+    });
+  </script>
+  
+  
+</html>

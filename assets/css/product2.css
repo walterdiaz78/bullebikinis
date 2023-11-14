@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background-image: url('../media/image/home.jpg');
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center 25%; /* Centra la imagen tanto horizontal como verticalmente */
+}
+header nav {
+  display: inline-block;
+  margin-top: 2%; /* 10px*/
+  color: white;
+  text-decoration: none;
+  
+}
+header nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px; /* tienen que ser 2vw en chicoeran 13 px*/ 
+  color: white !important;
+  text-decoration: none;
+}
+
+
+.body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bloc {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+ margin-top: 60%;
+
+}
+.bloc_bis {
+  background-size: cover;
+  background-position: center 25%;
+  transition:0.75s ease-in-out;
+  flex: 1;
+}
+
+.bloc_bis img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover; /*para que las imagenes se alineen*/
+/* 
+  box-shadow: 60px 60px 150px rgba(248, 243, 243, 0.6);  Sombreado gris claro y bordes difuminados */
+}
+
+
+.bloc_bis:hover {
+  flex: 4;
+  cursor: pointer;
+  border: 2rem;
+}
+.bloc_bis:not(:hover) {
+  opacity: 0.5;
+}
+
+
+
+
+
+/* Conservamos tu CSS actual sin cambios */
+
+.footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #444;
+  color: #f2f2f2;
+  padding: 40px;
+  clear: both;
+}
+
+.caja-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+/* Media query para dispositivos con un ancho de pantalla de al menos 768px (computadoras) */
+@media (min-width: 768px) {
+  .icon-text {
+      display: inline; /* Muestra el texto junto a los íconos en computadoras */
+      margin-left: 10px; /* Espacio entre el ícono y el texto */
+  }
+
+  .caja-footer a {
+      font-size: 1.3vw; /* Aumenta el tamaño de los íconos en computadoras */
+  }
+}
+
+/* Media query para dispositivos con un ancho de pantalla de hasta 767px (tablets y celulares) */
+@media (max-width: 767px) {
+  .icon-text {
+      display: none; /* Oculta el texto junto a los íconos en dispositivos más pequeños */
+  }
+
+
+  header h1{
+    font-size: 5vw;
+  }
+
+  header nav ul li {
+    position: relative;
+    top: 2% ;
+    font-size: 2.5vw; /* Tamaño de fuente para pantallas más pequeñas (celulares) */
+  }
+
+
+  .caja-footer a {
+      font-size: 24px; /* Mantiene el tamaño de los íconos en dispositivos más pequeños */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container-body{
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+
+header nav ul li a {
+  display: block;
+  padding: 24px 15px;
+}
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+
+h3 { position: relative
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+  text-align: left;
+  z-index: 1;
+  display: flex; /* Cambio a display: flex */
+  justify-content: space-between; /* Alinea elementos a la derecha */
+  align-items: center; /* Centra verticalmente */
+}

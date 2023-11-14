@@ -1,0 +1,227 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
+  color: #efefef;
+  text-align: center;
+  background-image: url('../media/image/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+}
+
+body a, body a:visited {
+  color: #efefef;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #fff;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+  text-align: left;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 3vw;
+  font-weight: bold;
+  padding-top: 2%;
+  margin-top: 3%;
+}
+
+header nav {
+  display: inline-block;
+  margin-top: 2%;
+}
+
+header nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-position: top;
+  }
+  
+  header {
+    padding-top: 0%;
+  }
+  header nav ul li {
+    position: relative;
+    top: 2%;
+    font-size: 2vw;
+  }
+  body.h3 {
+    display: flex;
+    top: 50%;
+  }
+  
+  .container {
+    top: 20vh;
+  }
+  
+  .container p {
+    font-size: 2vw;
+  }
+  
+  .container-body {
+    flex-wrap: wrap;
+  }
+}
+
+header nav ul li a {
+  display: block;
+  padding: 24px 15px;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.caption {
+  position: absolute;
+  top: 38%;
+  left: 5%;
+  text-align: center;
+  padding: 2% 1%;
+  border: 0.5vw solid;
+  color: #fff;
+  margin: 0;
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #444;
+  line-height: 1.6;
+  padding: 60px 0;
+  height: 30vh;
+}
+
+.container .content {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.container p {
+  margin-bottom: 40px;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  background-color: rgba(68, 68, 68, 0.2);
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    font-size: 3vw;
+  }
+}
+
+
+
+.form {
+  max-width: 600px;
+  margin: 2% auto 0;
+  background-color: rgba(36, 166, 206, 0.7);
+  border-radius: 10px;
+}
+
+.form input[type="text"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  background-color: #444;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form button:hover {
+ 
+background-color: #3e8e41;}
+
+#mayorista {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+#mayorista a {
+  text-decoration:solid;
+  color: #007bff;
+  background-color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#mayorista a:hover {
+  background-color: #007bff;
+  color: #fff;
+}

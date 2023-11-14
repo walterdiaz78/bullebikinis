@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="..//css/contact.css" />
+    <link rel="icon" type="image/png" href="../media/image/favicom.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <header>
+      <h1><a href="/index.html">BULLÉ</a></h1>
+              <nav>
+                  <ul>
+                      <li><a href="/index.html">HOME</a></li>
+                      <li><a href="about.html">+ INFO</a></li>
+                      <li><a href="product.html">SHOP</a></li>
+                      <li><a href="contact.html">CONTACTO</a></li>
+                  </ul>
+              </nav>
+    </header>
+    
+      <div id="mayorista">
+				<br>
+				<a href="./mayorista.html">Ingresa para compras mayoristas</a>
+			  </div>
+    </main>
+    <main class="content">
+      <section class="contact">
+        <div class="u-wrapper">
+          <div class="contact-content">
+            <div class="contendorForm">
+              <form
+                id="form"
+                class="form"
+                action="https://formspree.io/f/xbjvpkpa"
+                method="POST"
+              >
+                <h3 class="tag"><span>Contactate con nosotros</span></h3>
+                <label for="name">Nombre completo <span>*</span></label>
+                <input
+                  name="name"
+                  required
+                  type="text"
+                  id="name"
+                  placeholder="Nombre"
+                />
+                <label for="email">Correo electronico <span>*</span></label>
+                <input
+                  name="email"
+                  type="text"
+                  id="email"
+                  required
+                  placeholder="Email"
+                />
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10">
+En que podemos ayudarte? 
+
+
+
+
+
+
+
+
+
+                        </textarea
+                >
+                <button type="submit" class="btn primary full">
+                  Enviar mensaje
+                </button>
+              </form>
+            <!--</div>
+            <a href="mailto:walterdiaz78@gmail.com" id="trucazo">mail</a>
+          </div>-->
+        </div>
+      </section>
+    </main>
+      
+        
+    <footer class="footer">
+      <div class="caja-footer">
+          <a href="https://www.instagram.com/bulle.arg">
+              <i class="fa fa-instagram"></i> <span class="icon-text">Seguinos en Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/Bulle.arg">
+              <i class="fa fa-facebook"></i> <span class="icon-text">Seguinos en Facebook</span>
+          </a>
+          <a href="mailto:bulle.bikinis@gmail.com">
+              <i class="fa fa-envelope"></i> <span class="icon-text">Envianos un mail</span>
+          </a>
+          <a href="./assets/pages/product.html">
+              <i class="fa fa-map-marker"></i> <span class="icon-text">Belgrano CABA</span>
+          </a>
+      </div>
+  </footer>
+
+
+
+    <script>
+      const $form = document.querySelector("form");
+      $form.addEventListener("submit", handleSubmit);
+      async function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        const response = await fetch(this.action, {
+          method: this.method,
+          body: form,
+          headers: {
+            accept: "aplication/json",
+          },
+        });
+        if (response.ok) {
+          this.reset;
+          alert("Gracias por escribirnos, pronto nos pondremos en contacto");
+        }
+      }
+    </script>
+    
+  </body>
+</html>
